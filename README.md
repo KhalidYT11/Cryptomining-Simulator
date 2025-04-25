@@ -43,3 +43,7 @@ Potential Enhancements
 Enjoy experimenting with the simulated world of cryptocurrency mining! :)
 ## NOTE
  this program instructions and requirements.txt written by chatGPT not me
+
+## LICENSE
+
+this program was licensed by MIT 
