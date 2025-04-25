@@ -1,47 +1,44 @@
 # Crypto Mining Simulator (Python)
 
-This is a simple Python-based simulator that allows you to experience the basic concepts of cryptocurrency mining without involving any actual hardware. You can set a simulated hash rate and observe its effect on your mining success and profitability within the simulation.
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
+This Python script provides a simplified simulation of cryptocurrency mining, allowing you to explore the basic concepts of hash rate, block rewards, price fluctuations, and power costs without involving real hardware. This version features a cleaner code structure and utilizes the `numpy` and `matplotlib` libraries for enhanced price simulation and balance visualization.
 
 ## Features
 
-* Simulated Hash Rate Selection: Choose a hash rate value to represent your mining power within the simulation. This value directly influences your chances of finding new blocks.
-* Block Mining Simulation: The program simulates the process of finding cryptocurrency blocks. The probability of finding a block is proportional to the set hash rate.
-* Simulated Cryptocurrency Price Fluctuations: The price of the simulated cryptocurrency randomly changes over time, affecting the value of the mined coins and your balance.
-* Mining Power Cost: A simulated hourly cost is deducted from your balance to represent the electricity expenses associated with mining.
-* Balance Tracking: The simulator keeps track of your in-simulation cryptocurrency balance in fiat currency (e.g., USD).
-* Status Updates: You can check the current status of the simulator, including your balance, current hash rate, cryptocurrency price, and the total amount of cryptocurrency mined.
-* **Enhanced Features (using external libraries):**
-    * **Numerical Operations:** Utilizes the `numpy` library for more efficient numerical calculations, potentially for more complex mining probability models or statistical analysis.
-    * **Data Visualization:** Employs the `matplotlib` library to generate charts and graphs of your balance over time, cryptocurrency price history, or other relevant metrics.
+* **Simulated Mining Rigs:** Define a virtual mining rig with a specific hash rate (in MH/s), influencing your chances of mining blocks.
+* **Dynamic Cryptocurrency Price:** The price of the simulated cryptocurrency fluctuates over time using a model based on a slight upward drift and random volatility (powered by `numpy`).
+* **Block Mining Simulation:** The simulator models the process of finding cryptocurrency blocks, with the probability of success determined by your mining rig's hash rate.
+* **Balance Tracking:** Monitor your in-simulation balance in fiat currency (e.g., USD), which increases with mined blocks and decreases with power costs.
+* **Power Cost Simulation:** A simulated hourly cost is deducted from your balance to represent electricity expenses.
+* **Status Updates:** Get real-time information on your current balance, mining rig's hash rate, the current cryptocurrency price, and the total amount of cryptocurrency mined.
+* **Balance Visualization:** Visualize your balance history over time using a line plot generated with `matplotlib`.
 
 ## How to Run
 
-1. **Save the Code:** Save the Python code as a `.py` file (e.g., `mining_simulator.py`). Ensure your code imports the necessary external libraries (`numpy`, `matplotlib.pyplot`).
-2. **Install Dependencies:** Before running the script, you need to install the required external libraries. Open your terminal or command prompt and run:
-   ```bash
-   pip install -r requirements.txt
+1.  **Save the Code:** Save the Python script (e.g., `mining_simulator_clean.py`).
+2.  **Install Dependencies:** Ensure you have the required external libraries installed. Open your terminal or command prompt and run:
+    ```bash
+    pip install numpy matplotlib
+    ```
+3.  **Navigate to Directory:** Go to the directory where you saved the Python script.
+4.  **Run the Script:** Execute the script using the command:
+    ```bash
+    python mining_simulator_clean.py
+    ```
+5.  **Follow the Menu:** The simulator will present a menu with the following options:
+    * **1. Set Mining Rig (Hash Rate):** Enter the hash rate for your virtual mining rig.
+    * **2. Mine (Simulate):** Run the mining simulation for a short period, during which the price will update, mining attempts will occur, and power costs will be deducted.
+    * **3. Check Status:** Display the current status of your miner and the cryptocurrency market.
+    * **4. Plot Balance:** Generate and display a plot of your balance over time.
+    * **5. Exit:** Close the simulator.
 
-(Make sure you have a requirements.txt file in the same directory as your script, listing numpy and matplotlib with their desired versions - see the requirements.txt example provided earlier).
-3. Navigate to Directory: Go to the directory where you saved the mining_simulator.py and requirements.txt files.
-4. Run the Script: Execute the script using the command:
-python mining_simulator.py
+## Important Notes
 
- * Follow the Menu: The simulator will present a menu with options to set the hash rate, simulate mining, check the status, and potentially view generated plots (depending on how the enhanced features are implemented in the code).
-Important Notes
- * No Actual Mining: This program does not perform any real cryptocurrency mining. It is purely a simulation for educational and entertainment purposes.
- * Simulated Values: All values, including hash rate, cryptocurrency price, block reward, and power cost, are simulated and do not reflect real-world market conditions or hardware performance.
- * Hash Rate Abstraction: The "hash rate" in this simulator is an abstract value that directly influences the probability of mining a block within the simulation. It does not correspond to the technical specifications of actual mining hardware.
- * Simplified Model: This is a simplified model of cryptocurrency mining and does not include many of the complexities of real-world mining, such as network difficulty, pool mining, different mining algorithms, or hardware variations.
- * External Libraries: This version of the simulator utilizes external libraries (numpy and matplotlib) for enhanced functionality. Ensure these libraries are installed as described in the "How to Run" section.
-Potential Enhancements
- * More Realistic Price Fluctuations: Implement a more sophisticated model for cryptocurrency price changes based on historical data or market trends (potentially using numpy for calculations).
- * Difficulty Adjustment: Simulate the increasing difficulty of the cryptocurrency network over time (potentially using numpy for calculations).
- * Different Mining Hardware: Allow the user to "purchase" different simulated mining hardware with varying hash rates and power consumption.
- * Mining Pool Simulation: Introduce the concept of joining a mining pool and sharing rewards.
- * Advanced Visualizations: Use matplotlib to create more informative and interactive visualizations of mining statistics.
- * Data Analysis: Implement basic data analysis of mining results using numpy to calculate average earnings, profitability, etc.
-Enjoy experimenting with the simulated world of cryptocurrency mining! :)
+* **No Actual Mining:** This program **does not** perform any real cryptocurrency mining. It is a simulation for educational and entertainment purposes only.
+* **Simulated Economy:** All economic factors, including price fluctuations, block rewards, and power costs, are simulated and do not reflect real-world market conditions.
+* **Simplified Model:** This simulator provides a simplified representation of cryptocurrency mining and does not include complexities like network difficulty adjustments, mining pools, or different mining algorithms.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
