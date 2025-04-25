@@ -41,9 +41,7 @@ Potential Enhancements
  * Advanced Visualizations: Use matplotlib to create more informative and interactive visualizations of mining statistics.
  * Data Analysis: Implement basic data analysis of mining results using numpy to calculate average earnings, profitability, etc.
 Enjoy experimenting with the simulated world of cryptocurrency mining! :)
-## NOTE
- this program instructions and requirements.txt written by chatGPT not me
 
-## LICENSE
+## License
 
-this program was licensed by MIT 
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
