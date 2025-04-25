@@ -43,7 +43,7 @@ This is a simple Python-based simulator that allows you to experience the basic 
 
 Enjoy experimenting with the simulated world of cryptocurrency mining!
 
-##NOTE
+## NOTE
 
 
 this program and instructions written by ChatGPT
