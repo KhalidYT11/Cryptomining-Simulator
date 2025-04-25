@@ -1,0 +1,10 @@
+# No external libraries are strictly required for this basic crypto mining simulator.
+# It primarily uses Python's built-in modules.
+
+# If you intend to add more advanced features in the future (e.g., for
+# more complex simulations or visualizations), you might consider adding
+# libraries here. For example:
+
+numpy>=1.26.0      # For numerical computations
+matplotlib>=3.8.0   # For plotting graphs
+requests>=2.31.0    # For fetching real-time data (if you integrate that)
